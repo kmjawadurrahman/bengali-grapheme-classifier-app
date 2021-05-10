@@ -45,7 +45,6 @@ def get_resized_image_roi(image, resize_size=64):
 
     roi = image[ymin:ymax, xmin:xmax]
     resized_roi = cv2.resize(roi, (resize_size, resize_size), interpolation=cv2.INTER_AREA)
-    print(resized_roi)
     return resized_roi
 
 preds_dict = {
