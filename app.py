@@ -19,7 +19,7 @@ current_dir = pathlib.Path.cwd()
 def load_data_and_model():
     model = tensorflow.keras.models.load_model(current_dir.joinpath('model', 'my_model'))
     # model = tensorflow.keras.models.load_model('./model/my_model')
-    class_map_df = pd.read_csv(current_dir.joinpath('input', 'bengaliai-cv19', 'class_map.csv'))
+    class_map_df = pd.read_csv(current_dir.joinpath('input', 'class_map.csv'))
     return model, class_map_df
 
 model, class_map_df = load_data_and_model()
