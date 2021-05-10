@@ -1,5 +1,6 @@
 import gc
 import os
+import pathlib
 
 import tensorflow
 import pandas as pd
@@ -12,14 +13,17 @@ from PIL import ImageOps
 import streamlit as st
 
 
+current_dir = pathlib.Path.cwd()
+
 @st.cache(allow_output_mutation=True)
 def load_data_and_model():
-    model = tensorflow.keras.models.load_model('./model/my_model')
-    class_map_df = pd.read_csv('./input/bengaliai-cv19/class_map.csv')
+    model = tensorflow.keras.models.load_model(current_dir.joinpath('model', 'my_model'))
+    # model = tensorflow.keras.models.load_model('./model/my_model')
+    class_map_df = pd.read_csv(current_dir.joinpath('input', 'bengaliai-cv19', 'class_map.csv'))
     return model, class_map_df
 
 model, class_map_df = load_data_and_model()
-sample_images_dir = './input/sample-images/'
+sample_images_dir = current_dir.joinpath('input', 'sample-images')
 
 def get_resized_image_roi(image, resize_size=64):
     image = image.reshape(image.shape[0], image.shape[1])
@@ -62,7 +66,7 @@ row_id=[] # row_id place holder
 
 st.title('Bengali Grapheme App')
 st.header('Handwritten Character Recognition')
-st.image('./assets/header.png')
+st.image(Image.open(current_dir.joinpath('assets', 'header.png')))
 st.markdown('Background and dataset: [https://www.kaggle.com/c/bengaliai-cv19](https://www.kaggle.com/c/bengaliai-cv19)')
 
 st.markdown(
