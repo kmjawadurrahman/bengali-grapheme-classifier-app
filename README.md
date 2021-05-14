@@ -9,7 +9,10 @@ The dataset was introduced in this paper: [A Large Multi-Target Dataset of Commo
 The dataset is open-sourced as a part of a public Handwritten Grapheme Classification Challenge on Kaggle to benchmark vision algorithms for multi-target grapheme classification.
 Link to Kaggle page: [Bengali.AI Handwritten Grapheme Classification](https://www.kaggle.com/c/bengaliai-cv19/overview)
 
-You can read the [paper summary]().
+You can read the [paper summary here](https://github.com/kmjawadurrahman/bengali-grapheme-classifier-app/blob/main/docs/Grapheme-paper-review.pdf).
+
+
+
 https://share.streamlit.io/kmjawadurrahman/bengali-grapheme-classifier-app/main/app.py
 
 ### Readme to be updated soon
