@@ -4,12 +4,13 @@ An application to classify handwritten Bengali graphemes.
 
 ![Grapheme Components](./assets/grapheme-components.png)
 
-[Source](https://arxiv.org/abs/2010.00170)
+[Image source](https://arxiv.org/abs/2010.00170)
 
 Interact with the [streamlit application here](https://share.streamlit.io/kmjawadurrahman/bengali-grapheme-classifier-app/main/app.py).
 
 App preview:
 ![App preview](./assets/app-preview.gif)
+
 
 ## Table of contents
 - [Dataset](#dataset)
@@ -17,6 +18,7 @@ App preview:
 - [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
+- [Contributing](#contributing)
 
 
 ## Dataset
@@ -89,16 +91,27 @@ A simple Convolutional Neural Network model has been used. The training code is 
 ```
 
 `app.py` - The streamlit app code, including input image preparation and inference logic.
+
 `packages.txt` - List of OS level dependencies. Required for deploying app via share.streamlit.io.
+
 `requirements-dev.txt` - List of required Python packages for dev environment (for training model using Jupyter and running streamlit app locally).
+
 `requirements.txt` - List of Python packages required for deploying app via share.streamlit.io.
+
 `docs` - Folder containing paper summary document.
+
 `input/class_map.csv` - Maps the class labels to the actual Bengali grapheme components.
+
 `input/bengaliai-cv19` **(gitignored)** - Data files obtained from Kaggle. See [Setup and Installation](#setup-and-installation).
+
 `input/sample-images` - Sample images used by the streamlit app when input mode is set to "Use provided images".
+
 `input/upload-images` - Some samples of my own handwriting that you can upload when input mode is set to "Upload own character images".
+
 `model` - Folder containing saved model and an image of the model architecture.
+
 `notebooks` - Folder containing the Jupyter Notebook for model training.
+
 
 ## Setup and Installation
 
@@ -129,6 +142,5 @@ $ streamlit run app.py
 ```
 
 
-https://share.streamlit.io/kmjawadurrahman/bengali-grapheme-classifier-app/main/app.py
-
-### Readme to be updated soon
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
