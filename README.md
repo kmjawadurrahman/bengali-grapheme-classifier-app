@@ -3,6 +3,7 @@
 An application to classify handwritten Bengali graphemes.
 
 ![Grapheme Components](./assets/grapheme-components.png)
+
 [Source](https://arxiv.org/abs/2010.00170)
 
 Interact with the [streamlit application here](https://share.streamlit.io/kmjawadurrahman/bengali-grapheme-classifier-app/main/app.py).
@@ -36,6 +37,7 @@ A simple Convolutional Neural Network model has been used. The training code is 
 
 ## Project Structure
 
+```
 │   .gitignore
 │   app.py
 │   packages.txt
@@ -84,6 +86,7 @@ A simple Convolutional Neural Network model has been used. The training code is 
 │       └───variables
 └───notebooks
     └───Bengali Graphemes Multi Output CNN.ipynb
+```
 
 `app.py` - The streamlit app code, including input image preparation and inference logic.
 `packages.txt` - List of OS level dependencies. Required for deploying app via share.streamlit.io.
