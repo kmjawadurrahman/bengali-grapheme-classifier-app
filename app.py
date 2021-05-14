@@ -18,7 +18,6 @@ current_dir = pathlib.Path.cwd()
 @st.cache(allow_output_mutation=True)
 def load_data_and_model():
     model = tensorflow.keras.models.load_model(current_dir.joinpath('model', 'my_model'))
-    # model = tensorflow.keras.models.load_model('./model/my_model')
     class_map_df = pd.read_csv(current_dir.joinpath('input', 'class_map.csv'))
     return model, class_map_df
 
