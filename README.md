@@ -11,6 +11,8 @@ Interact with the [streamlit application here](https://share.streamlit.io/kmjawa
 App preview:
 ![App preview](./assets/app-preview.gif)
 
+This short [YouTube video](https://youtu.be/s1gdKgmcuIc) and this [blog post](https://www.linkedin.com/pulse/full-stack-deep-learning-project-bengali-grapheme-k-m-jawadur-rahman/) describes the project.
+
 
 ## Table of contents
 - [Dataset](#dataset)
