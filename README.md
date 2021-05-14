@@ -8,7 +8,7 @@ An application to classify handwritten Bengali graphemes.
 Interact with the [streamlit application here](https://share.streamlit.io/kmjawadurrahman/bengali-grapheme-classifier-app/main/app.py).
 
 App preview:
-
+![App preview](./assets/app-preview.gif)
 
 ## Table of contents
 - [Dataset](#dataset)
@@ -44,6 +44,7 @@ A simple Convolutional Neural Network model has been used. The training code is 
 │   requirements.txt
 │
 ├───assets
+│       app-preview.gif
 │       grapheme-components.png
 │       header.png
 │
