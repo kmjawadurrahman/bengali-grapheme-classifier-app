@@ -15,6 +15,11 @@ import streamlit as st
 
 current_dir = pathlib.Path.cwd()
 
+st.set_page_config(
+    page_title='Bengali Grapheme App',
+    page_icon=':pencil:'
+)
+
 @st.cache(allow_output_mutation=True)
 def load_data_and_model():
     model = tensorflow.keras.models.load_model(current_dir.joinpath('model', 'my_model'))
