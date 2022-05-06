@@ -122,10 +122,10 @@ def render_results(predictions):
         
         grapheme_list = list(filter(('0').__ne__, grapheme_list))
         grapheme = ''.join(grapheme_list)
-        with st.beta_container():
+        with st.container():
             with col1:
                 st.image(test_images[i])
-        with st.beta_container():
+        with st.container():
             with col2:
                 st.title(grapheme)
 
@@ -138,10 +138,10 @@ with st.form(key='my_form'):
         ('-', 'Grayscale', 'Binary'))
     submit_button = st.form_submit_button(label='Submit')
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 if mode == 'Use provided images':
-    with st.beta_container():
+    with st.container():
         with col1:
             st.header('Input Images:')
         with col2:
@@ -185,7 +185,7 @@ elif mode == 'Upload own character images':
     X_test = df_test_img.values.reshape(-1, IMG_SIZE, IMG_SIZE, N_CHANNELS)
 
     st.markdown('Samples available here ([**link**](https://drive.google.com/drive/folders/1rQzU2mUAuiZsGzpy3NqJgaFjSccFzYFv?usp=sharing)).')
-    with st.beta_container():
+    with st.container():
         with col1:
             st.header('Input Images:')
         with col2:
